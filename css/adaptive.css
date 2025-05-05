@@ -1,0 +1,156 @@
+@media(max-width: 1400px) {
+    .container {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .header {
+        padding-left: 40px;
+    }
+
+    .hero__text__wrapper {
+        padding: 100px 40px;
+        z-index: 10;
+    }
+
+    .hero__content {
+        flex-direction: column-reverse;
+    }
+
+    .hero__img {
+        position: absolute;
+        margin-top: 30px;
+        width: 100%;
+        filter: brightness(40%);
+    }
+
+    .hero__title {
+        width: 100%;
+    }
+
+    .hero__btn {
+        width: 40%;
+    }
+
+    .features .container {
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    .features__item {
+        margin-bottom: 5.5vh;
+        padding-bottom: 0;
+    }
+
+    .img__wrapper {
+        max-height: 100%;
+    }
+
+    .features__img {
+        max-height: 100%;
+    }
+
+    .form .container {
+        max-width: 94%;
+        padding-right: 0;
+    }
+
+    .form__inputs {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .footer .container {
+        max-width: 94%;
+    }
+
+    .footer__center__wrapper, .footer__bottom__wrapper {
+        padding-right: 0;
+    }
+}
+
+@media(max-width: 992px) {
+    .header, .hero__text__wrapper {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    .hero__btn  {
+        width: 100%;
+    }
+
+    .form__inputs {
+        width: 100%;
+    }
+
+    .footer__center__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .logo, .social__list {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .social__list {
+        margin-right: 0;
+    }
+
+    .inputs__wrapper {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 80px 20px 20px;
+    transition: 0.3s;
+  }
+  
+  .nav.active {
+    right: 0;
+  }
+  
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  
+  .burger-menu.active .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .burger-menu.active .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-menu.active .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  .menu-open {
+    overflow: hidden;
+  }
+}
